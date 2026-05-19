@@ -1,0 +1,9 @@
+com\dam\APIgaleria\repository\UsuarioRepository.class
+com\dam\APIgaleria\model\Usuario.class
+com\dam\APIgaleria\repository\AlienigenaRepository.class
+com\dam\APIgaleria\service\AlienigenaService.class
+com\dam\APIgaleria\ApIgaleriaApplication.class
+com\dam\APIgaleria\model\Alienigena.class
+com\dam\APIgaleria\service\UsuarioService.class
+com\dam\APIgaleria\controller\AlienigenaController.class
+com\dam\APIgaleria\controller\UsuarioController.class

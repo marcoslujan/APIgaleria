@@ -1,0 +1,193 @@
+ :root {
+            --omnitrix-green: #00FF00;
+            --omnitrix-green-glow: rgba(0, 255, 0, 0.45);
+            --dark-space: #0B0E14;
+            --metallic-bg: #141923;
+            --card-gray: #1E2530;
+            --glow-border: 1px solid rgba(0, 255, 0, 0.2);
+        }
+
+        body {
+            background-color: var(--dark-space);
+            color: #E2E8F0;
+            font-family: 'Roboto', sans-serif;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 255, 0, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(0, 255, 0, 0.05) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        h1, h2, h3, h4, .font-sci-fi {
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        /* Navbar estilo Nave Espacial */
+        .navbar-omnitrix {
+            background-color: rgba(11, 14, 20, 0.95);
+            border-bottom: 2px solid var(--omnitrix-green);
+            box-shadow: 0 4px 20px var(--omnitrix-green-glow);
+            backdrop-filter: blur(10px);
+        }
+
+        .omnitrix-logo {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 3px solid var(--omnitrix-green);
+            background: radial-gradient(circle, #fff 20%, var(--omnitrix-green) 40%, #000 70%);
+            display: inline-block;
+            box-shadow: 0 0 15px var(--omnitrix-green);
+            cursor: pointer;
+            transition: transform 0.8s ease-in-out;
+        }
+
+        .omnitrix-logo:hover {
+            transform: rotate(360deg);
+        }
+
+        /* Botones e Inputs Personalizados */
+        .btn-omnitrix {
+            background-color: transparent;
+            color: var(--omnitrix-green);
+            border: 1px solid var(--omnitrix-green);
+            text-transform: uppercase;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 8px rgba(0, 255, 0, 0.1);
+        }
+
+        .btn-omnitrix:hover {
+            background-color: var(--omnitrix-green);
+            color: #000;
+            box-shadow: 0 0 15px var(--omnitrix-green);
+            transform: translateY(-2px);
+        }
+
+        .btn-omnitrix-filled {
+            background-color: var(--omnitrix-green);
+            color: #000;
+            border: 1px solid var(--omnitrix-green);
+            text-transform: uppercase;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px var(--omnitrix-green-glow);
+        }
+
+        .btn-omnitrix-filled:hover {
+            background-color: #00CC00;
+            box-shadow: 0 0 25px var(--omnitrix-green);
+            transform: translateY(-2px);
+            color: #000;
+        }
+
+        .form-control, .form-select {
+            background-color: rgba(20, 25, 35, 0.8);
+            border: 1px solid rgba(0, 255, 0, 0.2);
+            color: #FFF;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus, .form-select:focus {
+            background-color: var(--metallic-bg);
+            border-color: var(--omnitrix-green);
+            box-shadow: 0 0 10px var(--omnitrix-green-glow);
+            color: #FFF;
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Tarjetas de los Alienígenas */
+        .alien-card {
+            background-color: var(--card-gray);
+            border: var(--glow-border);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .alien-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--omnitrix-green);
+            box-shadow: 0 0 25px var(--omnitrix-green-glow);
+        }
+
+        .alien-img-container {
+            position: relative;
+            height: 250px;
+            background-color: #000;
+            overflow: hidden;
+            border-bottom: 2px solid rgba(0, 255, 0, 0.1);
+        }
+
+        .alien-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+            padding: 10px;
+        }
+
+        .alien-card:hover .alien-img-container img {
+            transform: scale(1.08);
+        }
+
+        .alien-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: rgba(0, 255, 0, 0.85);
+            color: #000;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 4px;
+            box-shadow: 0 0 8px var(--omnitrix-green);
+        }
+
+        .alien-planet {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.6);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Banner Principal de Bienvenida */
+        .hero-banner {
+            background: linear-gradient(rgba(11, 14, 20, 0.8), rgba(20, 25, 35, 0.9)), url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?auto=format&fit=crop&q=80&w=1280') no-repeat center center;
+            background-size: cover;
+            border-radius: 20px;
+            border: var(--glow-border);
+            padding: 60px 40px;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.05);
+            margin-bottom: 50px;
+        }
+
+        /* Paneles del Plomero y Formularios */
+        .cyber-panel {
+            background-color: var(--metallic-bg);
+            border: var(--glow-border);
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .api-guide {
+            background-color: #07090D;
+            border-left: 4px solid #17A2B8;
+            font-family: monospace;
+            padding: 15px;
+            border-radius: 4px;
+            color: #2ECC71;
+            font-size: 14px;
+        }
