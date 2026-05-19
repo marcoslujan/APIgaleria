@@ -12,7 +12,6 @@ import org.springframework.data.annotation.Id;
 @Data
 @Table(name = "alienigena")
 public class Alienigena {
-    @jakarta.persistence.Id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,4 +20,6 @@ public class Alienigena {
     private String planeta;
     private String habilidad;
     private String descripcion;
+    private String imagenUrl;
+
 }

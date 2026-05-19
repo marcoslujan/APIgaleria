@@ -3,6 +3,7 @@
   <component name="AdditionalModuleElements">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/APIgaleria/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BEN10galeria/APIgaleria/src/main/java" isTestSource="false" />
     </content>
   </component>
 </module>
