@@ -24,13 +24,13 @@ public class DataLoader implements CommandLineRunner {
             alienigenaRepo.save(crearAlien(
                     "Inferno", "Pyronita", "Pyros", "Piroquinesis",
                     "Ser hecho de magma viviente capaz de proyectar fuego denso y moldear el calor a su antojo.",
-                    "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&q=80&w=600"
+                    "https://pbs.twimg.com/media/FumTdM0WwAMFX6r.jpg"
             ));
 
             alienigenaRepo.save(crearAlien(
                     "Feral", "Vulpimante", "Vulpino", "Sentidos sobrenaturales",
                     "Bestia feroz con habilidades de supervivencia, agilidad y sentidos superdesarrollados.",
-                    "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=600"
+                    "https://i.redd.it/k2q1coqbu5oa1.jpg"
             ));
 
             alienigenaRepo.save(crearAlien(
