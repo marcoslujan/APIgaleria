@@ -16,7 +16,7 @@ public class AlienigenaController {
     @GetMapping
     public List<Alienigena> listar() {return service.listar();}
     @PostMapping
-    public Alienigena guardar(Alienigena alienigena){return service.guardar(alienigena);}
+    public Alienigena guardar(@RequestBody Alienigena alienigena){return service.guardar(alienigena);}
     @GetMapping("/{id}")
     public Optional<Alienigena> buscar(@PathVariable Long id){return service.buscarPorId(id);}
     @DeleteMapping("/{id}")

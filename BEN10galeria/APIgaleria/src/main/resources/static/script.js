@@ -129,14 +129,20 @@ function filtrarAliens() {
 // 4. POST ALIEN (Arreglado para inyectar la URL de la imagen y usar alertas inline)
 function guardarAlienigena(e) {
         e.preventDefault();
-        const payload = {
-                nombre: document.getElementById('alien-nombre').value,
-                raza: document.getElementById('alien-raza').value,
-                planeta: document.getElementById('alien-planeta').value,
-                habilidad: document.getElementById('alien-habilidad').value,
-                imagenUrl: document.getElementById('alien-imagen').value, // ¡Este faltaba en tu código anterior!
-                descripcion: document.getElementById('alien-desc').value
-        };
+        // Validación cliente: campos obligatorios
+        const nombre = document.getElementById('alien-nombre').value.trim();
+        const raza = document.getElementById('alien-raza').value.trim();
+        const planeta = document.getElementById('alien-planeta').value.trim();
+        const habilidad = document.getElementById('alien-habilidad').value.trim();
+        const descripcion = document.getElementById('alien-desc').value.trim();
+        const imagenUrl = document.getElementById('alien-imagen').value.trim(); // opcional
+
+        if (!nombre || !raza || !planeta || !habilidad || !descripcion) {
+                mostrarAlerta('alerta-alien', 'Rellena todos los campos obligatorios antes de guardar.', 'danger');
+                return;
+        }
+
+        const payload = { nombre, raza, planeta, habilidad, descripcion, imagenUrl };
 
         fetch(API_ALIEN, {
                 method: 'POST',
@@ -158,13 +164,19 @@ function guardarAlienigena(e) {
 // 5. POST USUARIO
 function guardarUsuario(e) {
         e.preventDefault();
-        const payload = {
-                nombre: document.getElementById('reg-nombre').value,
-                rango: document.getElementById('reg-rango').value,
-                email: document.getElementById('reg-email').value,
-                planeta: document.getElementById('reg-planeta').value,
-                password: document.getElementById('reg-password').value
-        };
+        // Validación cliente: campos obligatorios
+        const nombre = document.getElementById('reg-nombre').value.trim();
+        const rango = document.getElementById('reg-rango').value.trim();
+        const email = document.getElementById('reg-email').value.trim();
+        const planeta = document.getElementById('reg-planeta').value.trim();
+        const password = document.getElementById('reg-password').value.trim();
+
+        if (!nombre || !rango || !email || !password) {
+                mostrarAlerta('alerta-registro', 'Rellena los campos Nombre, Rango, Email y Password.', 'danger');
+                return;
+        }
+
+        const payload = { nombre, rango, email, planeta, password };
 
         fetch(API_USER, {
                 method: 'POST',

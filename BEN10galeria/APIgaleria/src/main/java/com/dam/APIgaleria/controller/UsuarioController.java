@@ -19,7 +19,7 @@ public class UsuarioController {
         return service.listar();
     }
     @PostMapping
-    public Usuario guardar(Usuario usuario) {
+    public Usuario guardar(@RequestBody Usuario usuario) {
         return service.guardar(usuario);
     }
     @GetMapping("/{id}")

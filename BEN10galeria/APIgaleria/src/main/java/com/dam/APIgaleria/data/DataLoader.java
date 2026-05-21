@@ -36,61 +36,61 @@ public class DataLoader implements CommandLineRunner {
             alienigenaRepo.save(crearAlien(
                     "Cuatro Brazos", "Tetramano", "Khoros", "Fuerza sobrehumana",
                     "Guerrero de musculatura colosal distribuida en cuatro extremidades superiores. Altamente resistente.",
-                    "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=600"
+                    "https://cdn.myportfolio.com/87861e13-54ae-4151-bc13-523c9a68a2a3/92965bba-3a88-4099-9f4e-2061ee18bb76_rw_1920.jpg?h=5b85fd72c28f90e48f386d115dd73c63"
             ));
 
             alienigenaRepo.save(crearAlien(
                     "XLR8", "Kineceleran", "Kinet", "Supervelocidad",
                     "Capaz de manipular la fricción para desplazarse a más de 800 km/h, permitiéndole incluso subir por paredes verticales.",
-                    "https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?auto=format&fit=crop&q=80&w=600"
+                    ""
             ));
 
             alienigenaRepo.save(crearAlien(
                     "Diamantino", "Petrosapien", "Petropia", "Control cristalográfico",
                     "Compuesto por un cristal de silicio orgánico sumamente resistente. Capaz de reflectar luz y regenerarse.",
-                    "https://images.unsplash.com/photo-1515688594390-b649af70d282?auto=format&fit=crop&q=80&w=600"
+                    "https://cdna.artstation.com/p/assets/images/images/057/114/252/large/markus-sangalang-ben-10-project-diamondhex-af.jpg?1670865443"
             ));
 
             alienigenaRepo.save(crearAlien(
                     "Materia Gris", "Galvan", "Galvan Prime", "Superintelecto",
                     "De tamaño diminuto pero poseedor de un cerebro con una capacidad de procesamiento infinitamente superior a la humana.",
-                    "https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&q=80&w=600"
+                    ""
             ));
 
             alienigenaRepo.save(crearAlien(
                     "Actualizador", "Mecamorfo Galvánico", "Galvan B", "Fusión tecnológica",
                     "Nanobots líquidos capaces de asimilar cualquier tipo de tecnología no biológica para mejorarla y controlarla.",
-                    "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=600"
+                    "https://pbs.twimg.com/media/FO8uM4paAAIhrvm.jpg"
             ));
 
             alienigenaRepo.save(crearAlien(
                     "Libelulo", "Lepidóptero", "Lepidopterra", "Secreción corrosiva y vuelo",
                     "Un insecto gigante capaz de volar a grandes velocidades y disparar un moco viscoso y en ocasiones corrosivo y tóxico.",
-                    "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&q=80&w=600"
+                    "https://cdna.artstation.com/p/assets/images/images/088/799/558/large/brandon-sung-stinkfly-min.jpg?1749200981"
             ));
 
             alienigenaRepo.save(crearAlien(
                     "Fauces", "Piscciss Volann", "Piscciss", "Adaptación acuática y mandíbula destructora",
                     "Monstruo marino capaz de respirar bajo el agua y utilizar su fuerte mandíbula para destrozar y triturar casi cualquier cosa.",
-                    "https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&q=80&w=600"
+                    "https://cdna.artstation.com/p/assets/images/images/023/030/314/large/gordon-christian-ripjaws.jpg?1577792172"
             ));
 
             alienigenaRepo.save(crearAlien(
                     "Espectral", "Ectonurita", "Anur Phaetos", "Intangibilidad y posesión",
                     "Es un fantasma de apariencia aterradora y siniestra capaz de traspasar objetos sólidos y llegar a poseer seres vivos.",
-                    "https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&q=80&w=600"
+                    "https://preview.redd.it/ghostfreak-fanart-v0-78nob959hvdc1.jpeg?auto=webp&s=98c3d6cb7cacbbee4151d89a6a35e1d54130c8a9"
             ));
 
             alienigenaRepo.save(crearAlien(
                     "Rayo de cañón", "Pelarota arburiano", "Arburia", "Rodamiento de impacto",
                     "Es un ser de gran tamaño con la capacidad de enrollarse sobre sí mismo, usando esta forma coraza para desplazarse y atacar.",
-                    "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600"
+                    "https://cdnb.artstation.com/p/assets/images/images/066/348/831/large/suprateek-bala-cannonbolt-final.jpg?1692698587"
             ));
 
             alienigenaRepo.save(crearAlien(
                     "Malahierva", "Florauna", "Flors Verdance", "Clonación vegetal y lianas",
                     "Es una planta gigante capaz de hacer crecer sus extremidades y producir semillas explosivas o de humo desde su espalda.",
-                    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=600"
+                    "https://i.pinimg.com/736x/d8/75/1e/d8751e6db0d8bbf890828bb35e103023.jpg"
             ));
 
             System.out.println(">>> [CODON STREAM] Base de datos de PostgreSQL inicializada con los 12 alienígenas clásicos.");
